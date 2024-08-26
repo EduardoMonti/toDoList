@@ -1,0 +1,15 @@
+2024-08-26 15:40:21.259157-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TODO (TITLE, DEADLINE, CREATED_AT) VALUES (""Practing Spring"", ""2023-10-10"", '2023-05-19' [*]10:00:00.0)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO TODO (TITLE, DEADLINE, CREATED_AT) VALUES ("Practing Spring", "2023-10-10", '2023-05-19' 10:00:00.0) [42001-224]
+2024-08-26 15:41:01.155060-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TODO (TITLE, DEADLINE, CREATED_AT) VALUES ('Practing Spring', '2023-10-10', '2023-05-19' [*]10:00:00.0)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO TODO (TITLE, DEADLINE, CREATED_AT) VALUES ('Practing Spring', '2023-10-10', '2023-05-19' 10:00:00.0) [42001-224]
+2024-08-26 15:41:59.043542-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TODO (TITLE, DEADLINE, CREATED_AT) VALUES ('Practing Spring', '2023-10-10', '2023-05-19' [*]10:00:00.0)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO TODO (TITLE, DEADLINE, CREATED_AT) VALUES ('Practing Spring', '2023-10-10', '2023-05-19' 10:00:00.0) [42001-224]
+2024-08-26 17:22:36.052122-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM TODO"; expected "identifier"; SQL statement:
+DELETE * FROM TODO [42001-224]
+2024-08-26 17:22:45.237626-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM TODO"; expected "identifier"; SQL statement:
+DELETE * FROM TODO [42001-224]

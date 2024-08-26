@@ -9,24 +9,19 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @RestController
-public class HomeController {
+public class TodoController {
 
     private TodoRepository todoRepository;
 
-    public HomeController(TodoRepository todoRepository){
+    public TodoController(TodoRepository todoRepository){
         this.todoRepository = todoRepository;
     }
 
     @GetMapping("/")
-    public ModelAndView home(){
-        var modelAndView = new ModelAndView("home");
-        var movies = List.of("Star Wars: A new hope", "Star Wars: The empire strikes back", "Star Wars: Return of the Jedi");
-        modelAndView.addObject("movies", movies);
-
-        var todos = todoRepository.findAll();
-        System.out.println(todos);
-
-        return modelAndView;
+    public ModelAndView list(){
+       var modelAndView = new ModelAndView("todo/list");
+       modelAndView.addObject("todos", todoRepository.findAll());
+       return modelAndView;
     }
 
 }
